@@ -1,0 +1,116 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #001f76);
+    width: 100vw;
+    height: 100vh;
+
+
+}
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #1b2029;
+    color: aliceblue;
+    font-weight: 600;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  
+span{
+    color: #121212;
+}
+
+
+.containerInput{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem ;
+    margin: .50rem 0rem 1.78rem;
+    border-radius: .8rem;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.containerInput input{
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin-right: .2rem;
+}
+.containerInput input::placeholder{
+    color: #f1f1f1;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.25);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 29rem;
+    border-radius: .30rem;
+
+}
+
+.main h2{
+    font-size: 40px;
+    margin: 1rem 0rem;
+
+}
+.main span{
+    margin-bottom: .25rem;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+input{
+    padding: .3rem;
+    border-radius: .78rem;
+    text-decoration: none;
+    border: none;
+}
+
+.img{
+    border: none;
+    text-decoration: none;
+}
+
+.title{
+    color: #fff;
+    font-size: 6.5rem;
+    animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
